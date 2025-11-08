@@ -38,7 +38,6 @@
     ```bash
     npm install
 
-
 3. Certifique-se de que o Docker está aberto
 
 4. Suba os containers com o script
@@ -48,7 +47,9 @@
 
 5.Inicie o servidor em modo desenvolvimento
     ```bash
-    npm run start:dev
+     npm run start:dev
+    
+6. Aguardar iniciar
 
 ✅ Testando o endpoint
 
