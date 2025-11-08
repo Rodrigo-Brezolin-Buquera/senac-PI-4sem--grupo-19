@@ -1,0 +1,20 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: model-database
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: minha_senha
+      POSTGRES_DB: db
+    ports:
+      - '5432:5432'
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - pi-senac-network
+
+volumes:
+  postgres_data:
+
+networks:
+  pi-senac-network:
